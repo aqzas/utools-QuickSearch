@@ -1,0 +1,70 @@
+{
+	"pluginName": "快速搜索",
+	"description": "不用打关键字直接搜索",
+	"author": "KR0A1TY",
+	"homepage":"frontierseeker.xyz",
+	"main": "index.html",
+	"preload":"preload.js", 
+	"logo": "res/fs.jpeg",
+	"version": "1.0.0",
+	"features": [
+	    {
+			"code": "doge",
+			"explain": "在DogeDoge上搜索",
+			"icon": "res/doge.png",
+			"cmds":[
+				"dg", 
+				"ddk",
+				"doge",
+				{
+					"type": "over",
+					"label": "Searcy by DogeDoge"
+				}
+				
+			]
+		},
+		{
+			"code": "duck",
+			"explain": "在DuckDuckGo上搜索",
+			"icon": "res/duck.svg",
+			"cmds":[
+				"dk", 
+				"duck",
+				{
+					"type": "over",
+					"label": "Searcy by DuckDuckGo"
+				}
+				
+			]
+		},
+		{
+			"code": "F1000",
+			"explain": "在F1000上搜索",
+			"icon": "res/f1000.png",
+			"cmds":[
+				"f100", 
+				"f1000",
+				"F1000",
+				{
+					"type": "over",
+					"label": "Searcy In F1000"
+				}
+				
+			]
+		},
+		{
+			"code": "pubmed",
+			"explain": "在Pubmed上搜索",
+			"icon": "res/pubmed.png",
+			"cmds":[
+				"pubmed", 
+				"pbm",
+				{
+					"type": "over",
+					"label": "Searcy In Pubmed"
+				}
+				
+			]
+		}
+	]
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+
+   
+</script>
+
+<body>
+
+    <script>
+    utools.onPluginReady(() => {
+        utools.onPluginEnter(({code, type, payload}) => {
+
+            switch(code) {
+                case 'doge':
+                    myopen(`https://www.dogedoge.com/results?q=${payload}`)
+                    break;
+                case 'duck':
+                    myopen(`https://duckduckgo.com/?q=${payload}`)
+                    break;
+                case 'F1000':
+                    myopen(`https://f1000.com/work/#/items?query=${payload}`)
+                    break
+                case 'pubmed':
+                    myopen(`https://www.ncbi.nlm.nih.gov/pubmed/?term=${payload}`)
+                    break
+                case 'geo':
+                    myopen(`https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=${payload}`)
+                    break
+            }
+            utools.outPlugin()
+        })
+    }) 
+    </script>
+       
+
+</body>
+</html>
